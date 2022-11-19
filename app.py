@@ -1,4 +1,3 @@
-from itertools import product
 from datetime import datetime
 from random import choice
 import psycopg2
