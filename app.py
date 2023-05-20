@@ -25,5 +25,7 @@ product = Product(id=None, description='test', org='test')
 product.id = product_repository.insert_row(product)
 for _ in range(100000):
     action = choice(ACTIONS)
-    timeline = Timeline(time=datetime.now(), product_id=product.id, action=action)
+    timeline = Timeline(
+        time=datetime.now(), product_id=product.id, action=action
+    )
     timeline_repository.insert_row(timeline)

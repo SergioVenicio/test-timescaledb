@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS product (
 )
 """
 
+
 class ProductRepository:
     def __init__(self, db_conn):
         self.__conn = db_conn

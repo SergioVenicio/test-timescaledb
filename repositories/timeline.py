@@ -1,5 +1,3 @@
-from datetime import datetime
-
 import psycopg2
 
 
@@ -15,6 +13,7 @@ CREATE TABLE IF NOT EXISTS timeline (
 CREATE_HYPERTABLE = """
 SELECT create_hypertable('timeline', 'time')
 """
+
 
 class TimelineRepository:
     def __init__(self, db_conn):
